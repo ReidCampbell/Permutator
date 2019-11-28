@@ -17,7 +17,8 @@ const createPermutations = string => {
     return permutationArray;
 };
 
-const findIndex = string => {
+const findIndex = str => {
+    const string = str.toLowerCase();
     const permutationArray = createPermutations(string);
     const index = permutationArray.indexOf(string);
 
