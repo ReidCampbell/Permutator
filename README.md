@@ -6,8 +6,8 @@ This project is part of the Adludio tech test.
 ## Technologies
 Project is created with:
 
-*ES6
-*ExpressJS
+* ES6
+* ExpressJS
 
 ## Setup
 To run this project, install with NPM or Yarn:
