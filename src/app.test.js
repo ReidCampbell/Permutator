@@ -10,9 +10,17 @@ describe("Test the root path", () => {
                 done();
             });
     });
-    it("it should successfully go to /permutation-index", done => {
+    it("should successfully go to /permutation-index", done => {
         request(app)
             .get("/permutation-index/")
+            .then(response => {
+                expect(response.statusCode).toBe(200);
+                done();
+            });
+    });
+    it("should successfully show indexOfGivenPermutation", done => {
+        request(app)
+            .get("/permutation-index/:string")
             .then(response => {
                 expect(response.statusCode).toBe(200);
                 done();
